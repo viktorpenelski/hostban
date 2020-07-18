@@ -1,0 +1,7 @@
+# dot dirs
+.gradle/
+.idea/
+
+# build dirs
+build/
+out/
