@@ -1,14 +1,10 @@
 package com.github.viktorpenelski.hostban
 
-fun main() {
+fun main(args: Array<String>) {
+
     RedirectHosts(
             HostsFileLocation(),
             StaticBannedHostProvider(
-                    listOf(
-                            "facebook.com",
-                            "reddit.com",
-                            "youtube.com",
-                            "twitter.com"
-                    )
+                    args.asList()
             )).redirectToLocalhost()
 }
